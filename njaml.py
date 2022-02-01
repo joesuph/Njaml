@@ -150,30 +150,3 @@ class Njaml():
         return output
 
 
-"""
-Example:
-    njaml = Njaml()
-
-    #Load njaml functions
-    njaml.load("file.njaml")
-
-    print(njaml.functions)
-
-    njaml.link('inner11',lambda x: x + 2)
-    njaml.link('inner111',lambda x: x * 2)
-    njaml.link('inner12',lambda x: x + 2)
-
-    njaml.set_cases('outer1',[2,3],[10,12])
-
-    print(njaml.run_cases("outer1"))
-
-Njaml file:
-
-outer1
-  inner11
-    inner111
-  inner12
-
-outer2
-  inner21
-"""
