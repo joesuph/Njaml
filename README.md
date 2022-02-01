@@ -19,3 +19,36 @@ Like YAML, it is hierarchical. In a viewer with collapsing enabled, it is easy t
 8. Add test cases
 9. Run any function at any level to get results.
 
+## Example
+
+file.njaml
+```yaml
+outer1
+  inner11
+    inner111
+  inner12
+outer2
+  inner21
+```
+
+example.py
+```python
+njaml = Njaml()
+
+#Load njaml functions
+njaml.load("file.njaml")
+
+njaml.link('inner11',lambda x: x + 2)
+njaml.link('inner111',lambda x: x * 2)
+njaml.link('inner12',lambda x: x + 2)
+
+njaml.run('outer1',2) # = 10
+
+njaml.run('inner11',2) # = 8
+
+#Add test cases
+njaml.set_cases('outer1',[2,3],[10,12])
+
+#run test cases
+njaml.run_cases("outer1") # In console: Case 0 passed\n  Case 1 passed\n 2 passed.\n 0 failed.
+```
