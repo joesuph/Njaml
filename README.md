@@ -1,7 +1,7 @@
 # Not just a markup language
 
 ## About 
-Njaml (pronounced en-jamol) is a function piping tool that can be implemented for any programming language. It is based on the easy to read and easy to create yaml structure. 
+Njaml (pronounced en-jamol, rhymes with camel and yaml) is a function piping tool that can be implemented for any programming language. It is based on the easy to read and easy to create yaml structure. 
 
 ## Why?
 This is yet another attempt at a programming framework that is easy to use, easy to skim, easy to verify, and easier to develop software solutions. 
