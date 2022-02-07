@@ -8,6 +8,8 @@ This is yet another attempt at a programming framework that is easy to use, easy
 
 Like YAML, it is hierarchical. In a viewer with collapsing enabled, it is easy to see everything at a high level with the ability to expand sections for as much detail as we want to see.
 
+Can also be useful for debugging, can write the output of each subfunction one by one to a file as a function is ran to see how each step transforms some input.
+
 ## Suggested workflow
 1. Frame problem as desired input and output
 2. Write a short sequence of high-level abstract tasks that would transform the input to output
